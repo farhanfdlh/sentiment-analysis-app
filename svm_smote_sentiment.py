@@ -123,8 +123,15 @@ st.title("Analisis Sentimen — Model SVM + SMOTE")
 
 st.markdown("""
 ### Panduan
-- Upload **CSV atau XLSX** berisi kolom `ulasan`.
-- Model, lexicon, dan kamus kata baku otomatis dimuat dari folder yang sama dengan svm_smote_sentiment.py.
+
+Upload file **CSV atau XLSX** dengan ketentuan:
+- **Baris pertama (header) harus bernama `ulasan`**
+- Baris-baris berikutnya berisi **data ulasan** yang ingin dianalisis.
+- Pastikan nama kolom ditulis persis **`ulasan`** (huruf kecil).
+
+📥 [Download contoh file dataset](https://drive.google.com/file/d/1T8nQnZOYDBUwEG_XeovrayDS_pkKrg9N/view?usp=sharing)
+
+Model, lexicon, dan kamus kata baku akan otomatis dimuat dari folder yang sama dengan `svm_smote_sentiment.py`.
 """)
 
 # ======================= FILE UPLOAD =========================
